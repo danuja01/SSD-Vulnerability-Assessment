@@ -1,0 +1,85 @@
+/*body {margin:0;}
+
+/* navbar */
+#lib ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(6, 4, 72);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#lib li {
+  float: left;
+}
+
+#lib li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#lib li a:hover:not(.active) {
+  background-color: rgb(230, 0, 0);
+}
+
+.active {
+  background-color: #197d43;
+  color: aliceblue;
+}
+
+/* Search */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.searchTerm {
+  border: 3px solid #197d43;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: #9dbfaf;
+  display: inline;
+  margin-top: 6px;
+  margin-left: 550px;
+}
+
+.searchTerm:focus {
+  color: #197d43;
+}
+
+/* Button */
+.button-2 {
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Akzidenz Grotesk BQ Medium', -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #197d43;
+  border-radius: 8px;
+  border-width: 0;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  margin-right: 150px;
+  float: right;
+  margin-top: 6px;
+}
+
+.button-2:hover {
+  background-color: #4d5107;
+}

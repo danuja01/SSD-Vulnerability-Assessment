@@ -1,0 +1,140 @@
+.Btabel {
+  width: 1000px;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+/* Zebra striping */
+.Tr2:nth-of-type(odd) {
+  background: #eee;
+}
+
+.The1 {
+  background: #016fc9;
+  color: white;
+  font-weight: bold;
+}
+
+.td1,
+.The1 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+.td1 {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .Btabel {
+    width: 100%;
+  }
+
+  /* Force table to not be like tables anymore */
+  .Btabel,
+  thead,
+  tbody,
+  .The1,
+  .td1,
+  .Tr1 {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead .Tr1 {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .Tr1 {
+    border: 1px solid #ccc;
+  }
+
+  .td1 {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .td1:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.Th1 {
+  color: #000;
+  float: left;
+  font-size: xx-large;
+  margin-top: 70px;
+  font-weight: 700;
+  margin-left: 45%;
+}
+
+.button-3 {
+  appearance: none;
+  background-color: #912125;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #0a3d19;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}

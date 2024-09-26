@@ -1,0 +1,57 @@
+.bcimg  {
+    background-image: url("./Image/banner2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+ .libimg{
+    background-image: url("./Image/librack.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100bh;
+  }
+
+  .whitebc{
+    background-image: url("./Image/bcwhite.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .hh1{
+    font-family: Brush Script MT;
+    font-size: 70px;
+    margin-left: 2%;
+    margin-top: 3%;
+  }
+
+  .hh2{
+    margin-top: 0%;
+    font-family: Fantasy;
+    margin-left: 2%;
+    font-size: 70px;
+  }
+
+  
+  .box{
+    margin-right: 10%;
+    margin-top: 0px;
+  }
+
+
+  .sec {
+    background-color: #064367;
+    width: 200px;
+    height:70px;
+    padding: 20px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .sec:hover{
+  
+   background-color:rgba(12, 116, 130, 0.673);
+  
+  }
+
